@@ -1,1 +1,6 @@
-{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "./index.js" }] }
+{
+    "version": 2,
+    "name": "native-server",
+    "builds": [{ "src": "index.js", "use": "@vercel/node" }],
+    "routes": [{ "src": "/(.*)", "dest": "build/index.js" }]
+  }
