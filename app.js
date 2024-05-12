@@ -5,7 +5,9 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import { config } from "dotenv";
 export const app = express();
-app.use(cors());
+app.use(cors({
+    origin: 'https://piyish.vercel.app'
+  }));
 config({
     path : "./local.env"
 })

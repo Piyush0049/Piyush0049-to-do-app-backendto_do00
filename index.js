@@ -1,7 +1,9 @@
 import { app } from "./app.js";
 import connecttodb from "./data/database.js";
 import cors from "cors";
-app.use(cors());
+app.use(cors({
+    origin: 'https://piyish.vercel.app'
+  }));
 
 connecttodb();
 const port = process.env.PORT;
