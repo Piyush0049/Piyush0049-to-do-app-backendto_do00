@@ -11,7 +11,7 @@ config({
 app.use(express.json())
 app.use(cookieParser());
 app.use(cors({
-    origin : "https://to-do-app-frontend0049-1.onrender.com",
+    origin : "https://to-do-app-frontend-0049-dcgz.vercel.app",
     methods : ["GET", "POST", "PATCH", "DELETE"],
     credentials : true
 }));
