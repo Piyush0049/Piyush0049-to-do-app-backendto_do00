@@ -11,7 +11,7 @@ config({
 app.use(express.json())
 app.use(cookieParser());
 app.use(cors({
-    origin : "https://piyish.vercel.app",
+    origin : "https://to-do-app-frontend0049-1.onrender.com",
     methods : ["GET", "POST", "PATCH", "DELETE"],
     credentials : true
 }));
