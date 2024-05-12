@@ -5,6 +5,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import { config } from "dotenv";
 export const app = express();
+app.use(cors());
 config({
     path : "./local.env"
 })
