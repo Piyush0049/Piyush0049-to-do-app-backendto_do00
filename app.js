@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(cookieParser());
 app.use(cors({
     origin : "https://to-do-app-frontend-0049-dcgz.vercel.app",
-    methods : ["GET", "POST", "PATCH", "DELETE"],
+    methods : ["GET", "POST", "PATCH", "DELETE", "PUT"],
     credentials : true
 }));
 app.use("/user", userrouter);
